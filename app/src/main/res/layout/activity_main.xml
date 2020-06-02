@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Date"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="23sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFF">
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </CalendarView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/notes"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_btn"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Notes"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/createNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-48dp"
+        android:text="Create Note"
+        android:onClick="OpenCreateNote"
+        android:background="@drawable/bg_btn"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000" />
+</LinearLayout>
